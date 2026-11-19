@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lumen Arcade</title>
+<meta name="description" content="Lumen Arcade is a free play-money casino-style game collection. No real money, deposits or withdrawals.">
+<meta name="theme-color" content="#06100f">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src-elem 'self' https://fonts.googleapis.com; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" referrerpolicy="no-referrer" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<radialGradient id="gApple" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ff8f8f"/><stop offset=".5" stop-color="#e0262f"/><stop offset="1" stop-color="#8f0f1b"/></radialGradient>
+<radialGradient id="gRot" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#b9b56c"/><stop offset=".55" stop-color="#6f6a2a"/><stop offset="1" stop-color="#2e2d12"/></radialGradient>
+<linearGradient id="gGem" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c8f8ff"/><stop offset=".5" stop-color="#3fb6ff"/><stop offset="1" stop-color="#2a4fd0"/></linearGradient>
+<linearGradient id="gGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff0a8"/><stop offset=".55" stop-color="#e8b94a"/><stop offset="1" stop-color="#a8741a"/></linearGradient>
+<linearGradient id="gLemon" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff6a6"/><stop offset=".6" stop-color="#f5d52b"/><stop offset="1" stop-color="#c29a08"/></linearGradient>
+<radialGradient id="gCherry" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ff8585"/><stop offset=".5" stop-color="#d4162a"/><stop offset="1" stop-color="#70091a"/></radialGradient>
+<linearGradient id="gRuby" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9a9a"/><stop offset=".55" stop-color="#e0262f"/><stop offset="1" stop-color="#8f0f1b"/></linearGradient>
+<symbol id="i-apple" viewBox="0 0 64 64"><path d="M32 18c-6-6-20-4-20 14 0 14 9 26 16 26 3 0 3-1 4-1s1 1 4 1c7 0 16-12 16-26 0-18-14-20-20-14z" fill="url(#gApple)"/><path d="M33 17c0-6 3-10 9-12-1 6-3 10-9 12z" fill="#35c46a"/><ellipse cx="21" cy="30" rx="4" ry="8" fill="#fff" opacity=".28" transform="rotate(20 21 30)"/></symbol>
+<symbol id="i-rotten" viewBox="0 0 64 64"><path d="M32 18c-6-6-20-4-20 14 0 14 9 26 16 26 3 0 3-1 4-1s1 1 4 1c7 0 16-12 16-26 0-18-14-20-20-14z" fill="url(#gRot)"/><path d="M33 17c0-6 3-9 8-11" stroke="#4a3a1a" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="24" cy="36" r="3" fill="#1d1b0a"/><circle cx="40" cy="42" r="4" fill="#1d1b0a"/><path d="M24 28l6 6m0-6l-6 6M38 30l6 6m0-6l-6 6" stroke="#e9e6b0" stroke-width="2.5" stroke-linecap="round"/></symbol>
+<symbol id="i-gem" viewBox="0 0 64 64"><path d="M32 6l22 15-22 37L10 21z" fill="url(#gGem)"/><path d="M10 21h44M32 6l-9 15 9 37 9-37z" stroke="#ffffff90" stroke-width="1.5" fill="none"/><path d="M32 6l-9 15h18z" fill="#fff" opacity=".35"/></symbol>
+<symbol id="i-bomb" viewBox="0 0 64 64"><circle cx="30" cy="38" r="20" fill="#1b2328"/><ellipse cx="23" cy="30" rx="6" ry="4" fill="#fff" opacity=".25" transform="rotate(-30 23 30)"/><path d="M42 20c4-6 8-6 10-12" stroke="#c9974a" stroke-width="3.5" fill="none" stroke-linecap="round"/><path d="M52 4l2 5 5 1-5 2-1 5-3-4-5-1 5-3z" fill="#ffd36b"/></symbol>
+<symbol id="i-cherry" viewBox="0 0 64 64"><path d="M22 38C24 24 34 16 46 10M43 34C44 24 46 16 46 10" stroke="#3ea35a" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="22" cy="46" r="11" fill="url(#gCherry)"/><circle cx="43" cy="44" r="11" fill="url(#gCherry)"/><path d="M46 10c8-3 12-1 14 3-6 3-11 3-14-3z" fill="#35c46a"/><ellipse cx="18" cy="42" rx="3" ry="4" fill="#fff" opacity=".35"/></symbol>
+<symbol id="i-lemon" viewBox="0 0 64 64"><ellipse cx="32" cy="34" rx="24" ry="17" fill="url(#gLemon)" transform="rotate(-20 32 34)"/><path d="M8 40l-4 3M56 26l4-3" stroke="#c29a08" stroke-width="4" stroke-linecap="round"/><ellipse cx="25" cy="28" rx="8" ry="3.5" fill="#fff" opacity=".4" transform="rotate(-24 25 28)"/></symbol>
+<symbol id="i-bell" viewBox="0 0 64 64"><path d="M32 7c-3 0-5 2-5 5-8 3-12 10-12 20 0 6-3 9-5 12h44c-2-3-5-6-5-12 0-10-4-17-12-20 0-3-2-5-5-5z" fill="url(#gGold)"/><circle cx="32" cy="52" r="6" fill="#a8741a"/><path d="M22 20c-3 3-4 7-4 12" stroke="#fff" opacity=".5" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+<symbol id="i-star" viewBox="0 0 64 64"><polygon points="32,5 40,24 60,25 44,38 49,58 32,47 15,58 20,38 4,25 24,24" fill="url(#gGold)" stroke="#fff3b0" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+<symbol id="i-seven" viewBox="0 0 64 64"><text x="32" y="54" text-anchor="middle" font-family="Bricolage Grotesque,Impact,sans-serif" font-weight="800" font-size="62" fill="url(#gRuby)" stroke="#fff" stroke-opacity=".5" stroke-width="1.5">7</text></symbol>
+<symbol id="i-crown" viewBox="0 0 64 64"><path d="M10 46L6 20l16 12 10-18 10 18 16-12-4 26z" fill="#fff3b8" stroke="#946414" stroke-width="3" stroke-linejoin="round"/><rect x="10" y="48" width="44" height="7" rx="2" fill="#946414"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 64 64"><path d="M36 4L12 36h16l-4 24 28-34H34z" fill="#e9f3f6" stroke="#4b6270" stroke-width="3" stroke-linejoin="round"/></symbol>
+</defs>
+</svg>
+<div class="shell">
+  <header class="top">
+    <a class="logo" href="#lobby" aria-label="Lumen Arcade home"><i></i><span class="logotxt">Lumen Arcade</span></a>
+    <span class="badge">Play money only</span>
+    <span class="grow"></span>
+    <div class="balchip" id="balchip"><small>Balance</small><span id="bal">0</span><small>LC</small></div>
+    <button class="iconbtn" id="walletBtn" type="button" aria-label="Wallet"><svg class="gi" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h13v4"/><path d="M3 7v11a2 2 0 0 0 2 2h14a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1H5a2 2 0 0 1-2-2z"/><circle cx="16" cy="14.5" r="1.2" fill="currentColor"/></svg><span class="btxt">Wallet</span></button>
+    <button class="iconbtn" id="setBtn" type="button" aria-label="Settings"><svg class="gi" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg><span class="btxt">Settings</span></button>
+  </header>
+  <div class="strip">Play money only. Credits have no cash value, and there are no deposits or withdrawals.</div>
+  <div class="body">
+    <nav id="nav" aria-label="Games"></nav>
+    <main id="main"></main>
+  </div>
+  <footer>
+    <p>Lumen Credits (LC) are free play credits with no cash value. There are no deposits, withdrawals or prizes. For entertainment only, 18+.</p>
+    <p class="credit">Created by developer Ahmed Naser &middot; <a href="https://wa.me/201050162971" target="_blank" rel="noopener noreferrer">WhatsApp 01050162971</a> &middot; <button type="button" class="linkbtn" id="termsLink">Terms &amp; policies</button></p>
+    <p>This number is for developer contact only. Lumen Arcade never accepts payments.</p>
+  </footer>
+</div>
+<div id="modal" hidden></div>
+<div id="toast" hidden></div>
+<canvas id="confetti"></canvas>
+<script src="app.js" defer></script>
+</body>
+</html>
